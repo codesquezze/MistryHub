@@ -32,8 +32,8 @@ app.use("/api/booking", require("./routes/booking"));
 //port number allocation and listening on that port
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 3000;
+  port = 8080;
 }
 app.listen(port, function () {
-  console.log("Server started on port 3001");
+  console.log("Server started on port 8080");
 });

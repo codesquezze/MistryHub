@@ -1,0 +1,2 @@
+frontend -->> npm run start
+backend -->> nodemon .\server.js

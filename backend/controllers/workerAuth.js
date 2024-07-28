@@ -98,8 +98,8 @@ function sendRegistrationEmail(name, email, category) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "mistryhub1@gmail.com",
-      pass: "wfrhzlqkidporeae",
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
