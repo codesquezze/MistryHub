@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import "./card.css"; // Import the CSS file
-
 import Rating from "@mui/material/Rating";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
@@ -86,12 +85,12 @@ function Card(props) {
           <h4>
             <strong>Name </strong>: {props.props.name}
           </h4>
-          <h4>Category: {props.props.category}</h4>
-          <h4>Experience: {props.props.experience}</h4>
-          <h4>Location: {props.props.location}</h4>
-          <h4>Contact Number: {props.props.contactNumber}</h4>
-          <h4>Charge Per Service: {props.props.serviceCost} </h4>
-          <h4>{props.props.ratingAverage}</h4>
+          <h4> <strong>Category </strong>: {props.props.category}</h4>
+          <h4> <strong>Experience(Years) </strong>: {props.props.experience}</h4>
+          <h4> <strong>Location </strong>: {props.props.location}</h4>
+          <h4> <strong>Contact Number </strong>: {props.props.contactNumber}</h4>
+          <h4> <strong>Charge Per Service </strong>: {props.props.serviceCost} </h4>
+          <h4><strong>Average Rating </strong>: {props.props.ratingAverage}</h4>
         </div>
         <div className="worker_image">
           <img
@@ -102,7 +101,7 @@ function Card(props) {
         </div>
       </div>
 
-      <p className="worker_description">{props.props.about}</p>
+      <p className="worker_description"><strong>{props.props.about}</strong></p>
       <div className="rating-book">
         <div className="rating">
           <Rating

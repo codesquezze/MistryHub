@@ -6,6 +6,7 @@ import axios from "axios";
 import { Link,useNavigate } from "react-router-dom";
 function ClientForm() {
   const navigate=useNavigate();
+  //workerInfo --> clientInfo  and setWorkerInfo --> setClientInfo
   const [workerInfo, setWorkerInfo] = useState({
     name: "",
     email: "",
@@ -68,7 +69,6 @@ function ClientForm() {
               <input
                 className="input-box"
                 type="text"
-                placeholder="Name"
                 name="name"
                 value={workerInfo.name}
                 onChange={(event) =>

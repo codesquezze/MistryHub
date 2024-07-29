@@ -73,9 +73,9 @@ const BookingRequests = ({
         <div>
           {[...bookingDetails].reverse().map((request) => (
             <div className="booking-card" key={request._id}>
-              <p className="booking-card-content">Booking Id: {request._id};</p>
+              <p className="booking-card-content">Booking Id: {request._id}</p>
               <p className="booking-card-content">
-                Worker Category: {request.serviceCategory};
+                Worker Category: {request.serviceCategory}
               </p>
               <p className="booking-card-content">
                 Client Name: {request.clientName}
@@ -93,7 +93,7 @@ const BookingRequests = ({
                 })}
               </p>
               <p className="booking-card-content">
-                Visiting Address: {request.address};
+                Visiting Address: {request.address}
               </p>
               <p className="booking-card-content">
                 Visiting Date:{" "}
